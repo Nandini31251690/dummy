@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       <nav className="p-4 px-10 md:px-20 h-20 bg-black text-white">
         <div className="flex h-full items-center justify-between">
-          <div className="text-2xl font-bold">Logo</div>
+          <NavLink to="/" className="text-2xl font-bold">Logo</NavLink>
 
           {/* Desktop Links */}
           <div className="md:flex hidden gap-6 text-xl font-semibold">
