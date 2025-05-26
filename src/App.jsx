@@ -9,8 +9,8 @@ function App() {
 
 
   return (
-    <>
-      <Router>
+    <div className='w-screen min-h-screen  bg-[#9a99f2]'>
+
       <Navbar />
       <Routes>
         <Route path="/" element={<Herosection />} />
@@ -20,9 +20,12 @@ function App() {
         <Route path="/about" element={<About />} />
 
       </Routes>
-    </Router>
 
-    </>
+    </div>
+      
+      
+
+    
  
      
 

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="p-4 px-10 md:px-20 h-20 bg-black text-white">
+      <nav className="p-4 px-10 md:px-20 h-20 bg-[#431259] text-white">
         <div className="flex h-full items-center justify-between">
           <NavLink to="/" className="text-2xl font-bold">Logo</NavLink>
 

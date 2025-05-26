@@ -8,11 +8,16 @@ export default {
     extend: {
       animation: {
         'slide-down': 'slideDown 0.3s ease-in-out',
+        'scroll-left': 'scroll-left 5s linear infinite',
       },
       keyframes: {
         slideDown: {
           '0%': { transform: 'translateY(-10%)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+        'scroll-left': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },
