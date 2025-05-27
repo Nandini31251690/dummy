@@ -9,6 +9,7 @@ export default {
       animation: {
         'slide-down': 'slideDown 0.3s ease-in-out',
         'scroll-left': 'scroll-left 5s linear infinite',
+        'scroll-right': 'scroll-right 5s linear infinite',
       },
       keyframes: {
         slideDown: {
@@ -16,12 +17,15 @@ export default {
           '100%': { transform: 'translateY(0)', opacity: 1 },
         },
         'scroll-left': {
-          '0%': { transform: 'translateX(0%)' },
+          '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
+        },
+        'scroll-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
         },
       },
     },
   },
   plugins: [],
 }
-
