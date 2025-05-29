@@ -5,6 +5,7 @@ import Contact from './Components/Contact';
 import About from './Components/About';
 import Navbar from './Components/Navbar'
 import Herosection from './Components/HeroSection'
+
 function App() {
 
 
@@ -12,6 +13,7 @@ function App() {
     <div className='w-screen min-h-screen  bg-[#9a99f2]'>
 
       <Navbar />
+     
       <Routes>
         <Route path="/" element={<Herosection />} />
         <Route path="/products" element={<Products />} />
@@ -20,7 +22,7 @@ function App() {
         <Route path="/about" element={<About />} />
 
       </Routes>
-
+ 
     </div>
       
       

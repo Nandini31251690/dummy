@@ -1,0 +1,80 @@
+.advisor-container {
+  display: flex;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.advisor-image {
+  background: linear-gradient(90deg, #002b5c 50%, #f1c40f 50%);
+  color: white;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advisor-image img {
+  width: 100%; /* Adjust image size */
+  border-radius: 50%; /* Circular image */
+}
+
+.advisor-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.advisor-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.advisor-info li {
+  margin: 10px 0;
+}
+
+.form-container {
+  padding: 20px;
+  width: 50%;
+  background-color: white;
+}
+
+.form-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 15px;
+}
+
+.form-container input,
+.form-container select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.continue-button {
+  background-color: #e84393;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.continue-button:hover {
+  background-color: #d32f6e;
+}

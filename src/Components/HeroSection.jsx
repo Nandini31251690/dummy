@@ -5,6 +5,7 @@ import img2 from '../assets/lg.png';
 import img3 from '../assets/msi.png';
 import { useState, useEffect, useRef } from 'react';
 import Products from './Products';
+import Advisorform from './Advisorform';
 
 const carouselImages = [img1, img2, img3];
 
@@ -41,6 +42,10 @@ const HeroSection = () => {
 
       <div className="mt-8 px-2 sm:px-6 md:px-16 lg:px-28 pb-24 min-h-screen">
         {/* Hero Section */}
+        {/*ADVISOR FORM*/}
+          <div className="mt-12">
+          <Advisorform />
+        </div>
         <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-8">
           {/* Left: Kritika-Enterprises */}
           <div className="w-full lg:w-1/2">
@@ -75,6 +80,7 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
+
           {/* Right: Carousel */}
           <div
             className="relative w-full lg:w-1/2 h-48 sm:h-64 md:h-80 lg:h-64 rounded-lg overflow-hidden shadow-lg bg-white"
@@ -86,7 +92,6 @@ const HeroSection = () => {
               alt={`carousel-${current}`}
               className="w-full h-full object-cover transition-all duration-500"
             />
-            {/* Left Arrow */}
             <button
               onClick={prevSlide}
               className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white rounded-full p-2 hover:bg-opacity-60"
@@ -94,7 +99,6 @@ const HeroSection = () => {
             >
               &#8592;
             </button>
-            {/* Right Arrow */}
             <button
               onClick={nextSlide}
               className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white rounded-full p-2 hover:bg-opacity-60"
@@ -102,7 +106,6 @@ const HeroSection = () => {
             >
               &#8594;
             </button>
-            {/* Dots */}
             <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
               {carouselImages.map((_, idx) => (
                 <span
@@ -114,6 +117,10 @@ const HeroSection = () => {
           </div>
         </div>
 
+        
+      
+
+        {/* Brands section */}
         <div className="mt-16">
           <h2 className="text-2xl sm:text-3xl text-center font-bold pt-10 mb-8">
             Our Associated Brands
@@ -121,21 +128,15 @@ const HeroSection = () => {
           <InfiniteScrollLogos />
         </div>
 
-        {/* contact-us */}
+        {/* Contact info */}
         <div className="mt-16 pb-20">
           <div className="max-w-md mx-auto p-8">
             <h2 className="text-2xl font-bold mb-4 text-left">Contact Us</h2>
           </div>
           <div className="ml-0 sm:ml-16 space-y-2">
-            <div>
-              <span className="font-semibold">Email:</span> kritikaenterprises@email.com
-            </div>
-            <div>
-              <span className="font-semibold">Phone:</span> +91 98765 43210
-            </div>
-            <div>
-              <span className="font-semibold">Address:</span> 123, Main Street, New Delhi, India
-            </div>
+            <div><span className="font-semibold">Email:</span> kritikaenterprises@email.com</div>
+            <div><span className="font-semibold">Phone:</span> +91 98765 43210</div>
+            <div><span className="font-semibold">Address:</span> 123, Main Street, New Delhi, India</div>
           </div>
         </div>
       </div>
@@ -143,4 +144,4 @@ const HeroSection = () => {
   );
 }
 
-export default HeroSection
+export default HeroSection;
