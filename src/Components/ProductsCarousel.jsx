@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import prod1 from '../assets/samsung.png';
-import prod2 from '../assets/toshiba.png';
-import prod3 from '../assets/lenovo.png';
+import prod1 from '../assets/product1.webp';
+import prod2 from '../assets/product2.webp';
+import prod3 from '../assets/product3.webp';
+import prod4 from '../assets/product4.webp';
 
-const productCarouselImages = [prod1, prod2, prod3];
+const productCarouselImages = [prod1, prod2, prod3,prod4];
 
 const ProductsCarosel = () => {
   const [current, setCurrent] = useState(0);

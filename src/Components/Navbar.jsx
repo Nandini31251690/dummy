@@ -14,10 +14,26 @@ const Navbar = () => {
 
           {/* Desktop Links */}
           <div className="md:flex hidden gap-6 text-xl font-semibold">
-            <NavLink to="/products">Products</NavLink>
-            <NavLink to="/services">Services</NavLink>
-            <NavLink to="/contact">Contact Us</NavLink>
-            <NavLink to="/about">About Us</NavLink>
+            <NavLink to="/products" style={(e)=>{
+              return {
+                color:e.isActive?"tomato":""
+              }
+            }}>Products</NavLink>
+            <NavLink to="/services" style={(e)=>{
+              return {
+                color:e.isActive?"tomato":""
+              }
+            }}>Services</NavLink>
+            <NavLink to="/Login" style={(e)=>{
+              return {
+                color:e.isActive?"tomato":""
+              }
+            }} >Login</NavLink>
+            <NavLink to="/SignUp" style={(e)=>{
+              return {
+                color:e.isActive?"tomato":""
+              }
+            }} >SignUp</NavLink>
           </div>
 
           {/* toggle Hamburger Icon */}
@@ -33,8 +49,8 @@ const Navbar = () => {
                transition-all duration-300 ease-in-out animate-slide-down text-center w-[100%] mx-auto ">
           <NavLink to="/products" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">Products</NavLink>
           <NavLink to="/services" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">Services</NavLink>
-          <NavLink to="/contact" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">Contact Us</NavLink>
-          <NavLink to="/about" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">About Us</NavLink>
+          <NavLink to="/Login" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]" >Login</NavLink>
+          <NavLink to="/SignUp" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">SignUp</NavLink>
         </div>
       )}
     </>

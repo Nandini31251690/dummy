@@ -1,7 +1,7 @@
 const Advisorform = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between px-10 py-16 bg-gradient-to-br from-[#f2f3ff] to-[#f8f4ff] font-sans">
-      <div className="flex flex-col md:flex-row w-full border border-gray-300 rounded-xl bg-white shadow-xl p-6">
+      <div className="flex flex-col md:flex-row w-full rounded bg-white shadow-xl p-6">
       <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
         <div className="flex flex-col items-center">
           <span className="px-4 py-2 bg-purple-100 text-purple-800 font-semibold rounded-full text-xl mb-4">
