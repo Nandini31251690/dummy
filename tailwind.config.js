@@ -8,8 +8,8 @@ export default {
     extend: {
       animation: {
         'slide-down': 'slideDown 0.3s ease-in-out',
-        'scroll-left': 'scroll-left 5s linear infinite',
-        'scroll-right': 'scroll-right 5s linear infinite',
+        'scroll-left': 'scroll-left 15s linear infinite',
+        'scroll-right': 'scroll-right 15s linear infinite',
       },
       keyframes: {
         slideDown: {

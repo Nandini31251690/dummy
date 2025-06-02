@@ -1,47 +1,47 @@
-import React from 'react';
-import './Advisorform.css'; // Import the CSS file
-
 const Advisorform = () => {
   return (
-    <div className="advisor-container">
-      <div className="advisor-image">
-        <img 
-          src="https://th.bing.com/th/id/OIP.ZKbOB4BmKvIiKy-fHieivAHaHa?rs=1&pid=ImgDetMain" 
-          alt="Advisor"
-        />
-        <div className="advisor-info">
-          <h1>Talk to our Advisor</h1>
-          <ul>
-            <li>Personalized Suggestions</li>
-            <li>Free Access to Events</li>
-          </ul>
+    <div className="flex flex-col md:flex-row items-center justify-between px-10 py-16 bg-gradient-to-br from-[#f2f3ff] to-[#f8f4ff] font-sans">
+      <div className="flex flex-col md:flex-row w-full border border-gray-300 rounded-xl bg-white shadow-xl p-6">
+      <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
+        <div className="flex flex-col items-center">
+          <span className="px-4 py-2 bg-purple-100 text-purple-800 font-semibold rounded-full text-xl mb-4">
+            Talk to our Advisor!
+          </span>
+          <img 
+            src="https://th.bing.com/th/id/OIP.ZKbOB4BmKvIiKy-fHieivAHaHa?rs=1&pid=ImgDetMain" 
+            alt="Advisor"
+            className="rounded-full shadow-lg object-cover w-auto h-auto max-w-full"
+          />
         </div>
       </div>
-      <div className="form-container">
-        <h1>Talk to our Advisor!</h1>
-        <form>
-          <label>
-            Your Topic of Interest*
-            <select required>
+      <div className="md:w-1/2 bg-white p-8 rounded-xl shadow-md">
+        <h1 className="text-3xl font-bold text-purple-800 mb-6">Book a session!</h1>
+        <form className="space-y-4">
+          <div>
+            <label className="block font-medium text-gray-700 mb-1">Your Topic of Interest*</label>
+            <select required className="w-full p-3 border border-gray-300 rounded text-base">
               <option value="">Select Product</option>
               <option value="Monitors">Monitors</option>
               <option value="LED screens">LED screens</option>
             </select>
-          </label>
-          <label>
-            Enter Name
-            <input type="text" placeholder="Enter Name" required />
-          </label>
-          <label>
-            Enter Email
-            <input type="email" placeholder="Enter Email" required />
-          </label>
-          <label>
-            Enter Phone
-            <input type="tel" placeholder="Enter Phone" required />
-          </label>
-          <button type="submit" className="continue-button">CONTINUE</button>
+          </div>
+          <div>
+            <label className="block font-medium text-gray-700 mb-1">Enter Name</label>
+            <input type="text" placeholder="Enter Name" required className="w-full p-3 border border-gray-300 rounded text-base" />
+          </div>
+          <div>
+            <label className="block font-medium text-gray-700 mb-1">Enter Email</label>
+            <input type="email" placeholder="Enter Email" required className="w-full p-3 border border-gray-300 rounded text-base" />
+          </div>
+          <div>
+            <label className="block font-medium text-gray-700 mb-1">Enter Phone</label>
+            <input type="tel" placeholder="Enter Phone" required className="w-full p-3 border border-gray-300 rounded text-base" />
+          </div>
+          <button type="submit" className="w-full py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-700 transition">
+            CONTINUE
+          </button>
         </form>
+      </div>
       </div>
     </div>
   );

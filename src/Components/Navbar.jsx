@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="p-4 px-10 md:px-20 h-20 bg-[#431259] text-white">
+      <nav className="p-4 px-10 md:px-20 h-20 bg-[#F3F4F6] text-[#1F2937]">
         <div className="flex h-full items-center justify-between">
           <NavLink to="/" className="text-2xl font-bold">Logo</NavLink>
 
@@ -29,12 +29,12 @@ const Navbar = () => {
 
       {/* Mobile dropdown list */}
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col gap-4 bg-black text-white px-6 py-4 text-lg font-semibold
+        <div className="md:hidden flex flex-col gap-4 bg-[#F3F4F6] text-[#1F2937] px-6 py-4 text-lg font-semibold
                transition-all duration-300 ease-in-out animate-slide-down text-center w-[100%] mx-auto ">
-          <NavLink to="/products" onClick={() => setisMenuOpen(false)}>Products</NavLink>
-          <NavLink to="/services" onClick={() => setisMenuOpen(false)}>Services</NavLink>
-          <NavLink to="/contact" onClick={() => setisMenuOpen(false)}>Contact Us</NavLink>
-          <NavLink to="/about" onClick={() => setisMenuOpen(false)}>About Us</NavLink>
+          <NavLink to="/products" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">Products</NavLink>
+          <NavLink to="/services" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">Services</NavLink>
+          <NavLink to="/contact" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">Contact Us</NavLink>
+          <NavLink to="/about" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">About Us</NavLink>
         </div>
       )}
     </>

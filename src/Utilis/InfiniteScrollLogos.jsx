@@ -24,30 +24,30 @@ const rightLogos = allLogos.slice(midpoint);
 
 const InfiniteScrollLogos = () => {
   return (
-    <div className="overflow-hidden py-8 space-y-4 ">
+    <div className="overflow-hidden py-8 space-y-4 bg-[#F3F4F6] text-[#1F2937]">
       {/* Scroll Left */}
-      <div className="overflow-hidden whitespace-nowrap">
-        <div className="inline-block animate-scroll-left">
+      <div className="overflow-hidden whitespace-nowrap relative">
+        <div className="flex animate-scroll-left w-max">
           {[...leftLogos, ...leftLogos].map((logo, index) => (
             <img
               key={`left-${index}`}
               src={logo}
               alt={`Brand-left-${index}`}
-              className="inline-block h-16 sm:h-20 md:h-24 w-24 sm:w-32 md:w-40 object-contain mx-2"
+              className="h-16 sm:h-20 md:h-24 w-24 sm:w-32 md:w-40 object-contain mx-2 shadow-sm"
             />
           ))}
         </div>
       </div>
 
       {/* Scroll Right */}
-      <div className="overflow-hidden whitespace-nowrap">
-        <div className="inline-block animate-scroll-right">
+      <div className="overflow-hidden whitespace-nowrap relative">
+        <div className="flex animate-scroll-right w-max">
           {[...rightLogos, ...rightLogos].map((logo, index) => (
             <img
               key={`right-${index}`}
               src={logo}
               alt={`Brand-right-${index}`}
-              className="inline-block h-16 sm:h-20 md:h-24 w-24 sm:w-32 md:w-40 object-contain mx-2"
+              className="h-16 sm:h-20 md:h-24 w-24 sm:w-32 md:w-40 object-contain mx-2 shadow-sm"
             />
           ))}
         </div>

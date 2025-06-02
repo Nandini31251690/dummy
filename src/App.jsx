@@ -10,7 +10,7 @@ function App() {
 
 
   return (
-    <div className='w-screen min-h-screen  bg-[#9a99f2]'>
+    <div className='w-screen min-h-screen '>
 
       <Navbar />
      
