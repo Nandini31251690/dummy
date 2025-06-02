@@ -74,8 +74,6 @@ const ProductsCarosel = () => {
           </div>
         </div>
       </div>
-
-      {/* ...rest of your Products section... */}
     </div>
   );
 };

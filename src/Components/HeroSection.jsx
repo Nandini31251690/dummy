@@ -41,10 +41,10 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-screen min-h-screen bg-[#F3F4F6] text-[#1F2937]">
+    <div className="w-screen min-h-screen text-[#1F2937]">
       <ProductsCarosel />
 
-      <div className="mt-8 px-2 sm:px-6 md:px-16 lg:px-28  min-h-screen">
+      <div className="mt-8  min-h-screen">
         {/* Hero Section */}
         {/*ADVISOR FORM*/}
           <div className="mt-12">
@@ -52,14 +52,18 @@ const HeroSection = () => {
         </div>
 
           {/* Brands section */}
-        <div className="mt-16">
-          <h2 className="text-2xl sm:text-3xl text-center font-bold pt-10 text-[#7C3AED]">
-            Our Associated Brands
+        <div className="mb-8 mt-8">
+          <h2 className="text-2xl  sm:text-3xl text-center font-bold">
+            <span className="bg-purple-100 text-purple-800 rounded-full px-4 py-1 inline-block">
+              Our Associated Brands
+            </span>
           </h2>
-          <InfiniteScrollLogos />
+          <div className="w-full mt-4 mb-4">
+            <InfiniteScrollLogos />
+          </div>
         </div>
 
-        <div className="w-full bg-gradient-to-br from-[#7C3AED] via-[#8B5CF6] to-[#4C1D95] rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col-reverse lg:flex-row gap-8 items-center">
+        <div className="w-11/12 mx-auto bg-gradient-to-br from-[#7C3AED] via-[#8B5CF6] to-[#4C1D95] rounded-3xl  p-8 sm:p-12 text-white shadow-xl flex flex-col-reverse lg:flex-row gap-8 items-center">
           {/* Left: Text */}
           <div className="w-full lg:w-1/2">
             <div className="font-bold text-[#F33539] text-3xl sm:text-4xl md:text-5xl mb-4">Kritika-Enterprises</div>
@@ -86,7 +90,7 @@ const HeroSection = () => {
                   </span>
                 </span>
               </h2>
-              <p className="text-base sm:text-lg mt-4 sm:w-4/5">
+              <p className="text-md sm:text-lg mt-4 sm:w-4/5">
                 At Kritika Enterprises, we specialize in providing high-performance hardware solutions for both businesses and individual consumers.
                 We deliver only the best from leading global brands like HP, Dell, and ASUS. Whether you're a hospital, a startup, or a home user,
                 we ensure fast, reliable tech solutions with unmatched support.

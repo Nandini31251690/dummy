@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="p-4 px-10 md:px-20 h-20 bg-[#F3F4F6] text-[#1F2937]">
+      <nav className="p-4 px-10 md:px-20 h-20  text-[#1F2937]">
         <div className="flex h-full items-center justify-between">
           <NavLink to="/" className="text-2xl font-bold">Logo</NavLink>
 
@@ -16,24 +16,24 @@ const Navbar = () => {
           <div className="md:flex hidden gap-6 text-xl font-semibold">
             <NavLink to="/products" style={(e)=>{
               return {
-                color:e.isActive?"tomato":""
+                color:e.isActive?"crimson":""
               }
             }}>Products</NavLink>
             <NavLink to="/services" style={(e)=>{
               return {
-                color:e.isActive?"tomato":""
+                color:e.isActive?"crimson":""
               }
             }}>Services</NavLink>
             <NavLink to="/Login" style={(e)=>{
               return {
-                color:e.isActive?"tomato":""
+                color:e.isActive?"crimson":""
               }
             }} >Login</NavLink>
             <NavLink to="/SignUp" style={(e)=>{
               return {
-                color:e.isActive?"tomato":""
+                color:e.isActive?"crimson":""
               }
-            }} >SignUp</NavLink>
+            }} className="bg-[#c6b1ec] rounded px-2" >SignUp</NavLink>
           </div>
 
           {/* toggle Hamburger Icon */}
