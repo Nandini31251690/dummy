@@ -4,7 +4,7 @@ const Advisorform = () => {
       <div className="flex flex-col md:flex-row w-full rounded bg-white shadow-xl p-6">
       <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
         <div className="flex flex-col items-center">
-          <span className="px-4 py-2 bg-purple-100 text-purple-800 font-semibold rounded-full text-xl mb-4">
+          <span className="px-4 py-2 bg-[#040273] text-white font-semibold rounded-full text-xl mb-4">
             Talk to our Advisor!
           </span>
           <img 
@@ -15,10 +15,10 @@ const Advisorform = () => {
         </div>
       </div>
       <div className="md:w-1/2 bg-white p-8 rounded-xl shadow-md">
-        <h1 className="text-3xl font-bold text-purple-800 mb-6">Book a session!</h1>
+        <h1 className="text-3xl font-bold text-[#040273] mb-6">Book a session!</h1>
         <form className="space-y-4">
           <div>
-            <label className="block font-medium text-gray-700 mb-1">Your Topic of Interest*</label>
+            <label className="block font-medium text-[#3c3b85] mb-1">Your Topic of Interest*</label>
             <select required className="w-full p-3 border border-gray-300 rounded text-base">
               <option value="">Select Product</option>
               <option value="Monitors">Monitors</option>
@@ -26,18 +26,18 @@ const Advisorform = () => {
             </select>
           </div>
           <div>
-            <label className="block font-medium text-gray-700 mb-1">Enter Name</label>
+            <label className="block font-medium text-[#3c3b85] mb-1">Enter Name</label>
             <input type="text" placeholder="Enter Name" required className="w-full p-3 border border-gray-300 rounded text-base" />
           </div>
           <div>
-            <label className="block font-medium text-gray-700 mb-1">Enter Email</label>
+            <label className="block font-medium text-[#3c3b85] mb-1">Enter Email</label>
             <input type="email" placeholder="Enter Email" required className="w-full p-3 border border-gray-300 rounded text-base" />
           </div>
           <div>
-            <label className="block font-medium text-gray-700 mb-1">Enter Phone</label>
+            <label className="block font-medium text-[#3c3b85] mb-1">Enter Phone</label>
             <input type="tel" placeholder="Enter Phone" required className="w-full p-3 border border-gray-300 rounded text-base" />
           </div>
-          <button type="submit" className="w-full py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-700 transition">
+          <button type="submit" className="w-full py-3 bg-[#040273] text-white rounded-lg font-semibold hover:bg-[#4947d6] transition">
             CONTINUE
           </button>
         </form>

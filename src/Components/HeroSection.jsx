@@ -54,7 +54,7 @@ const HeroSection = () => {
           {/* Brands section */}
         <div className="mb-8 mt-8">
           <h2 className="text-2xl  sm:text-3xl text-center font-bold">
-            <span className="bg-purple-100 text-purple-800 rounded-full px-4 py-1 inline-block">
+            <span className="bg-[#040273] text-white rounded-full px-4 py-1 inline-block">
               Our Associated Brands
             </span>
           </h2>
@@ -63,7 +63,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="w-11/12 mx-auto bg-gradient-to-br from-[#7C3AED] via-[#8B5CF6] to-[#4C1D95] rounded-3xl  p-8 sm:p-12 text-white shadow-xl flex flex-col-reverse lg:flex-row gap-8 items-center">
+        <div className="w-11/12 mx-auto bg-[#040273] rounded-3xl  p-8 sm:p-12 text-white shadow-xl flex flex-col-reverse lg:flex-row gap-8 items-center">
           {/* Left: Text */}
           <div className="w-full lg:w-1/2">
             <div className="font-bold text-[#F33539] text-3xl sm:text-4xl md:text-5xl mb-4">Kritika-Enterprises</div>
@@ -71,7 +71,7 @@ const HeroSection = () => {
               <h2 className="text-xl sm:text-2xl font-semibold mb-2">
                 <span className="inline-flex items-baseline">
                   We sell&nbsp;
-                  <span className="text-orange-600 text-2xl sm:text-3xl font-semibold">
+                  <span className="text-[#6870D1] text-2xl sm:text-3xl font-semibold">
                     <TypeAnimation
                       sequence={[
                         'Laptops', 500,

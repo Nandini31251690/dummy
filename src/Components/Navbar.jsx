@@ -31,9 +31,9 @@ const Navbar = () => {
             }} >Login</NavLink>
             <NavLink to="/SignUp" style={(e)=>{
               return {
-                color:e.isActive?"crimson":""
+                color:e.isActive?"red":""
               }
-            }} className="bg-[#c6b1ec] rounded px-2" >SignUp</NavLink>
+            }} className="bg-[#040273] text-white rounded px-2" >SignUp</NavLink>
           </div>
 
           {/* toggle Hamburger Icon */}
