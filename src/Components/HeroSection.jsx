@@ -41,31 +41,31 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-screen min-h-screen text-[#1F2937]">
+    <div className="flex flex-col w-[100%] overflow-x-hidden object-cover  text-[#1F2937]">
       <ProductsCarosel />
 
-      <div className="mt-8  min-h-screen">
-        {/* Hero Section */}
+      <div className="min-h-screen">
+
         {/*ADVISOR FORM*/}
           <div className="mt-12">
           <Advisorform />
         </div>
 
           {/* Brands section */}
-        <div className="mb-8 mt-8">
+        <div className=" mt-8">
           <h2 className="text-2xl  sm:text-3xl text-center font-bold">
             <span className="bg-[#040273] text-white rounded-full px-4 py-1 inline-block">
               Our Associated Brands
             </span>
           </h2>
-          <div className="w-full mt-4 mb-4">
+          <div className="w-full mt-4 ">
             <InfiniteScrollLogos />
           </div>
         </div>
 
-        <div className="w-11/12 mx-auto bg-[#040273] rounded-3xl  p-8 sm:p-12 text-white shadow-xl flex flex-col-reverse lg:flex-row gap-8 items-center">
+        <div className=" pl-4 pr-4  mx-auto bg-[#040273] rounded-3xl sm:p-12 text-white shadow-xl flex flex-col-reverse lg:flex-row gap-8 items-center">
           {/* Left: Text */}
-          <div className="w-full lg:w-1/2">
+          <div className=" lg:w-1/2">
             <div className="font-bold text-[#F33539] text-3xl sm:text-4xl md:text-5xl mb-4">Kritika-Enterprises</div>
             <div className="mt-4 text">
               <h2 className="text-xl sm:text-2xl font-semibold mb-2">

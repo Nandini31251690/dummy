@@ -8,35 +8,33 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="p-4 px-10 md:px-20 h-20  text-[#1F2937]">
+      <nav className="fixed p-4 w-[100%] px-4 md:px-8 lg:px-16 h-20 bg-white text-[#1F2937] border-b shadow-sm z-20">
         <div className="flex h-full items-center justify-between">
-          <NavLink to="/" className="text-2xl font-bold">Logo</NavLink>
+          {/* Left - Logo */}
+          <NavLink to="/" className="text-2xl font-bold text-blue-700">
+            Kr<span className="text-gray-800">itika</span> Enterprises
+          </NavLink>
 
-          {/* Desktop Links */}
-          <div className="md:flex hidden gap-6 text-xl font-semibold">
-            <NavLink to="/products" style={(e)=>{
-              return {
-                color:e.isActive?"crimson":""
-              }
-            }}>Products</NavLink>
-            <NavLink to="/services" style={(e)=>{
-              return {
-                color:e.isActive?"crimson":""
-              }
-            }}>Services</NavLink>
-            <NavLink to="/Login" style={(e)=>{
-              return {
-                color:e.isActive?"crimson":""
-              }
-            }} >Login</NavLink>
-            <NavLink to="/SignUp" style={(e)=>{
-              return {
-                color:e.isActive?"red":""
-              }
-            }} className="bg-[#040273] text-white rounded px-2" >SignUp</NavLink>
+          {/* Center - Search Bar (hidden on small screens) */}
+          <div className="hidden md:flex flex-1 justify-center px-6">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="w-full max-w-md px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
           </div>
 
-          {/* toggle Hamburger Icon */}
+          {/* Right - Login + SignUp */}
+          <div className="hidden md:flex items-center gap-4">
+            <NavLink to="/Login" className="text-sm font-medium text-[#040273] hover:underline">
+              Login
+            </NavLink>
+            <NavLink to="/SignUp" className="text-sm font-medium bg-[#040273] text-white px-4 py-1.5 rounded-md hover:bg-[#040273]">
+              SignUp
+            </NavLink>
+          </div>
+
+          {/* Hamburger - Mobile only */}
           <div className="md:hidden text-3xl cursor-pointer" onClick={() => setisMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <IoMdClose /> : <GiHamburgerMenu />}
           </div>
@@ -45,12 +43,9 @@ const Navbar = () => {
 
       {/* Mobile dropdown list */}
       {isMenuOpen && (
-        <div className="md:hidden flex flex-col gap-4 bg-[#F3F4F6] text-[#1F2937] px-6 py-4 text-lg font-semibold
-               transition-all duration-300 ease-in-out animate-slide-down text-center w-[100%] mx-auto ">
-          <NavLink to="/products" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">Products</NavLink>
-          <NavLink to="/services" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">Services</NavLink>
-          <NavLink to="/Login" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]" >Login</NavLink>
-          <NavLink to="/SignUp" onClick={() => setisMenuOpen(false)} className="hover:text-[#7C3AED]">SignUp</NavLink>
+        <div className="md:hidden flex flex-col gap-4 bg-gray-100 text-[#1F2937] px-6 py-4 text-lg font-semibold transition-all duration-300 ease-in-out animate-slide-down text-center w-full mx-auto">
+          <NavLink to="/Login" onClick={() => setisMenuOpen(false)} className="hover:text-blue-600">Login</NavLink>
+          <NavLink to="/SignUp" onClick={() => setisMenuOpen(false)} className="hover:text-blue-600">SignUp</NavLink>
         </div>
       )}
     </>

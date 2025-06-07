@@ -24,7 +24,7 @@ const rightLogos = allLogos.slice(midpoint);
 
 const InfiniteScrollLogos = () => {
   return (
-    <div className="overflow-hidden pb-8 text-[#1F2937] w-full">
+    <div className="overflow-hidden text-[#1F2937]">
       {/* Scroll Left */}
       <div className="overflow-hidden whitespace-nowrap relative">
         <div className="flex animate-scroll-left w-max">

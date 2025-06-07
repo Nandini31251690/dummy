@@ -34,9 +34,9 @@ const ProductsCarosel = () => {
   };
 
   return (
-    <div className="w-screen bg-[#9a99f2]">
+    <div className="bg-[#9a99f2]">
       {/* Product Carousel */}
-      <div className="flex justify-center items-center w-screen px-0">
+      <div className="flex justify-center items-center px-0">
         <div
           className="relative w-screen h-48 sm:h-64 md:h-80 lg:h-[28rem] rounded-none sm:rounded-lg overflow-hidden shadow-lg bg-white"
           onTouchStart={handleTouchStart}
