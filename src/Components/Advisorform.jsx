@@ -1,20 +1,7 @@
 const Advisorform = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between px-10 py-16 bg-gradient-to-br from-[#f2f3ff] to-[#f8f4ff] font-sans">
-      <div className="flex flex-col md:flex-row w-full rounded bg-white shadow-xl p-6">
-      <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
-        <div className="flex flex-col items-center">
-          <span className="px-4 py-2 bg-[#040273] text-white font-semibold rounded-full text-xl mb-4">
-            Talk to our Advisor!
-          </span>
-          <img 
-            src="https://th.bing.com/th/id/OIP.ZKbOB4BmKvIiKy-fHieivAHaHa?rs=1&pid=ImgDetMain" 
-            alt="Advisor"
-            className="rounded-full shadow-lg object-cover w-auto h-auto max-w-full"
-          />
-        </div>
-      </div>
-      <div className="md:w-1/2 bg-white p-8 rounded-xl shadow-md">
+    <div className="flex flex-col md:flex-row items-center justify-between w-full h-full">
+      <div className="flex flex-col md:w-2/3 bg-white p-8 rounded-xl shadow-md"> {/* 65% width */}
         <h1 className="text-3xl font-bold text-[#040273] mb-6">Book a session!</h1>
         <form className="space-y-4">
           <div>
@@ -42,6 +29,25 @@ const Advisorform = () => {
           </button>
         </form>
       </div>
+
+      {/* Advisor Image Section */}
+      <div className="md:w-1/3 flex flex-col justify-end items-center relative"> {/* 35% width */}
+        <div className="relative left-12 transform -translate-x-1/2 translate-y-20"> {/* Adjusted position */}
+           <div className="relative w-[22rem] h-[22rem] overflow-hidden rounded-full"> {/* Adjusted size */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center rounded-full" 
+              style={{ 
+                backgroundImage: 'url(https://th.bing.com/th/id/OIP.ZKbOB4BmKvIiKy-fHieivAHaHa?rs=1&pid=ImgDetMain)', 
+                opacity: 0.5 
+              }} 
+            />
+            <img 
+              src="https://th.bing.com/th/id/OIP.ZKbOB4BmKvIiKy-fHieivAHaHa?rs=1&pid=ImgDetMain" 
+              alt="Advisor"
+              className="object-cover w-full h-full" 
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
